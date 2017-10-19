@@ -83,7 +83,7 @@ for i, j in enumerate(s):
 		tmp += (increase + leftovers)	
 	returnsList[i % numDays] = tmp
 	plotReturns[i % numDays].append(tmp)
-print 'Initial investment of $%s is worth %s of its value' % (investment*numDays, 100*round(np.sum(returnsList) / (investment * numDays),4))
+print 'Initial investment of $%s is worth %s%% of its value' % (investment*numDays, 100*round(np.sum(returnsList) / (investment * numDays),4))
 
 plt.figure()
 for performance in plotReturns:
